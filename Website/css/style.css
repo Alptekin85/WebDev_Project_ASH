@@ -31,3 +31,13 @@
 .topnav .icon {
   display: none;
 }
+
+h1 {
+  color: lightskyblue;
+  text-align: center;
+}
+
+label{
+  width: 100px;
+  display:inline-block;
+}

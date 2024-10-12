@@ -45,9 +45,3 @@ label{
   width: 500px;
   height: 400px;
 }
-
-#mainBody{
-  background-image:
-    linear-gradient(rgb(222, 217, 253)),
-   "media/Web dev Alps.avif";
-}

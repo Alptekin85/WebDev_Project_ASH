@@ -155,7 +155,7 @@ button{
   padding: 10px 40px ;
   text-align: center;
   margin: auto;
-  display: flex;  /*note to self: allows dimensions to be flexable
+  display: flex;  /*note to self: allows dimensions to be flexable*/
 }
 
 button:hover{

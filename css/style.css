@@ -1,4 +1,4 @@
-@import url(https://www.1001fonts.com/css?family=sf-sports-night-font);
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap);
 
 .topnav{
   background-color: rgb(110, 110, 110);
@@ -32,7 +32,7 @@
 h1 {
   color: lightskyblue;
   text-align: center;
-  font-family: 'SF Sports Night Regular';
+  font-family: "Orbitron", sans-serif;
 }
 
 label{
@@ -67,6 +67,17 @@ label{
 }
 
 #myEmail{
-
+  background-color: lightgrey;
+  padding: 3px;
 }
 
+#message{
+  background-color: rgb(110, 110, 110);
+  margin: 10px;
+  padding: 20px;
+}
+
+#phoneNumber{
+  background-color: lightgrey;
+  padding: 3px; 
+}

@@ -38,11 +38,11 @@ h1 {
 
 
 .logo{
-  /* margin: 50px 700px; */
+   margin: 50px 700px; 
   margin-left: 45%;
   padding: 5px;
-  /* background-color: rgb(110, 110, 110); */
-  /* padding: 10px 40px ; */
+   background-color: rgb(110, 110, 110); */
+  padding: 10px 40px ; 
   display: flex
  
 
@@ -61,12 +61,14 @@ h1 {
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
+  
 }
 
 #aboutPage p{
   background-color: lightgrey;
   margin: 30px 30px;
   padding: 20px;
+  border-radius: 10px;
 }
 
 #message{
@@ -157,6 +159,10 @@ button:hover{
 
 
 }
+
+
+
+
 
 
 

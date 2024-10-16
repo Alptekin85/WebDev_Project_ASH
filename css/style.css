@@ -67,6 +67,22 @@ h1 {
   margin: 30px 30px;
   padding: 20px;
 }
+#myEmail{
+  background-color: lightgrey;
+  padding: 3px;
+}
+
+#message{
+  background-color: rgb(110, 110, 110);
+  margin: 10px;
+  padding: 20px;
+}
+
+#phoneNumber{
+  background-color: lightgrey;
+  padding: 3px; 
+}
+
 
 /* old version of form */
 /* .form-container {

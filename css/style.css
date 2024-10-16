@@ -1,9 +1,11 @@
-.topnav {
+@import url(https://www.1001fonts.com/css?family=sf-sports-night-font);
+
+.topnav{
   background-color: rgb(110, 110, 110);
   overflow: hidden;
 }
 
-.topnav a {
+.topnav a{
   float: left;
   display: block;
   color: #f2f2f2;
@@ -13,23 +15,24 @@
   font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav a:hover{
   background-color: lightblue;
   color: black;
 }
 
-.topnav a.active {
+.topnav a.active{
   background-color: skyblue;
   color: white;
 }
 
-.topnav .icon {
+.topnav .icon{
   display: none;
 }
 
 h1 {
   color: lightskyblue;
   text-align: center;
+  font-family: 'SF Sports Night Regular';
 }
 
 label{
@@ -51,8 +54,19 @@ label{
   z-index: 10;
 }
 
-p{
+#contactForm{
+  background-color: rgb(110, 110, 110);
+  padding: 20px;
+  margin: 10px;
+}
+
+#aboutPage p{
   background-color: lightgrey;
   margin: 20px 20px;
   padding: 20px;
 }
+
+#myEmail{
+
+}
+

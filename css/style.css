@@ -38,10 +38,10 @@ h1 {
 
 
 .logo{
-   margin: 50px 700px; 
+  margin: 50px 700px; 
   margin-left: 45%;
   padding: 5px;
-   background-color: rgb(110, 110, 110); */
+  background-color: rgb(110, 110, 110); */
   padding: 10px 40px ; 
   display: flex
  
@@ -76,6 +76,18 @@ h1 {
   margin: 10px;
   padding: 20px;
   border-radius: 10px;
+}
+
+
+#video{
+  width: 800px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 15px black;
+  
+
 }
 
 
@@ -142,6 +154,13 @@ textarea{
   margin-bottom: 25px;
 
 }
+button:hover{
+  opacity: 80%;
+  cursor: pointer;
+
+
+
+
 
 button{
   background-color: aquamarine;
@@ -150,7 +169,7 @@ button{
   padding: 10px 40px ;
   text-align: center;
   margin: auto;
-  display: flex;  /*note to self: allows dimensions to be flexable
+  display: flex;  
 }
 
 button:hover{

@@ -203,15 +203,16 @@ button:hover{
 // Merchandise Page
 
 
-.carousel-merch{
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
 
 .carousel{
     max-width: 40%;
     margin: 0 auto;
+}
+
+
+.carousel-slides{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 

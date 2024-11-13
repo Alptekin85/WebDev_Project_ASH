@@ -209,4 +209,13 @@ button:hover{
 }
 
 
+.carousel{
+    max-width: 40%;
+    margin: 0 auto;
+}
 
+
+.carousel-item img{
+    width: 100%;
+    object-fit: cover;
+}

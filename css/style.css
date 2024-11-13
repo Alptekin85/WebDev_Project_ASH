@@ -1,4 +1,15 @@
+//Font
+
 @import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap);
+
+
+
+
+
+//Navigation Bar
+
+
+
 
 .topnav{
   background-color: rgb(110, 110, 110);
@@ -29,12 +40,21 @@
   display: none;
 }
 
+
+
+
+
+
+//Headings / Logo
+
+
+
+
 h1{
   color: skyblue;
   text-align: center;
   font-family: "Orbitron", sans-serif;
 }
-
 
 
 .logo{
@@ -45,19 +65,13 @@ h1{
 }
 
 
-#contactForm{
-  background-color: rgb(110, 110, 110);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px; 
-}
 
-#aboutPage p{
-  background-color: lightgrey;
-  margin: 30px 30px;
-  padding: 20px;
-  border-radius: 10px;
-}
+
+
+
+//Paragraphs
+
+
 
 #message p{
   color: rgb(0, 51, 102);
@@ -66,6 +80,42 @@ h1{
   padding: 20px;
   border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+//About Page
+
+
+
+#aboutPage p{
+  background-color: lightgrey;
+  margin: 30px 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+//Contact Page
+
+
+
+
+#contactForm{
+  background-color: rgb(110, 110, 110);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px; 
+}
+
 
 
 #message h2{
@@ -140,7 +190,15 @@ button:hover{
   border-radius: 10px;
 }
 
-.carousel-slides{
+
+
+
+
+
+// Merchandise Page
+
+
+.carousel-merch{
   display: flex;
   transition: transform 0.5s ease-in-out;
 }

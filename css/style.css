@@ -210,7 +210,7 @@ button:hover{
 /* Merchandise Page */
 
 
-
+/*
 .carousel{
     max-width: 40%;
     margin: 0 auto;
@@ -227,3 +227,19 @@ button:hover{
     width: 100%;
     object-fit: cover;
 }
+*/
+
+
+.carousel {
+    max-width: 40%;
+    margin: 0 auto;
+  }
+
+  .carousel-inner {
+    text-align: center;
+  }
+
+  .carousel-merch img {
+    width: 100%;
+    object-fit: cover;
+  }

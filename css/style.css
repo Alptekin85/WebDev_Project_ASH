@@ -91,46 +91,6 @@ h1{
 
 
 
-/* old version of form */
-/* .form-container {
-  display: flex;
-  justify-content: center;  
-  align-items: center;      
-  height: 100vh;
-  margin-bottom: 8px;
-
-  
-} */
-
-/* form{
-  padding: 0px;
-  background-color: grey ;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  width: 400px;
-  height: 400px; 
-  overflow: auto;
- 
-  
-} */
-
-/* label{
-  width: 100px;
-  display: inline-block;
-  margin-bottom: 3px;
-  
- 
-}  */
-
-/* input {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 3px; 
-  border-radius: 10px; 
-} */
-
-/* end of old vesion of form */
-
 input{
   background-color: white;
   width: 40%;
@@ -180,7 +140,10 @@ button:hover{
   border-radius: 10px;
 }
 
-
+.carousel-slides{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
 
 
 

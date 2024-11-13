@@ -5,7 +5,9 @@
 
 
 
-
+video{
+  margin: 0px;
+}
 /* Navigation Bar */
 
 
@@ -65,10 +67,15 @@ h1{
 
 
 .logo{
-  margin: 50px 400px; 
-  padding: 5px;
+  margin-left: auto; 
+  margin-right: auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: rgb(110, 110, 110); 
   border-radius: 10px;
+  font-size: 0.7rem;
+  width: 270px;
 }
 
 
@@ -80,20 +87,45 @@ h1{
 
 
 
-#message p{
+.message p{
   color: rgb(0, 51, 102);
   background-color: rgb(102, 178, 255);
   margin: 10px;
   padding: 20px;
   border-radius: 10px;
+  transition: border-radius 0.2s, font-size 0.2s;
+  
 }
 
 
 
-#message h2{
+.message h2{
   background-color: rgb(102, 178, 255);
   color: rgb(0, 51, 102);
 }
+
+.story-title{
+  color: rgb(0, 51, 102);
+  background-color: rgb(39, 104, 169);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 180px;
+  margin-top: 100px;
+  
+}
+
+.message p:hover{
+  color: rgb(0, 51, 102);
+  background-color: rgb(102, 178, 255);
+  margin: 10px;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  
+
+}
+
 
 
 
@@ -130,13 +162,18 @@ h1{
 
 
 
-#video{
-  width: 800px;
-  border-top-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+.my-video{
+  width: 80%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 15px black;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 3px;
+  
+
+ 
+  
 }
 
 
@@ -186,6 +223,7 @@ button{
   text-align: center;
   margin: auto;
   display: flex;  
+  transition: opacity 0.5s
 }
 
 button:hover{
@@ -233,12 +271,22 @@ button:hover{
 .carousel {
     max-width: 40%;
     margin: 0 auto;
+  
   }
 
   .carousel-slides {
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    
+   
   }
 
+  .carousel-merch img {
+    width: 100px;
+    row-gap: 20px;
+   
+  }
   .carousel-merch img {
     width: 100%;
     object-fit: cover;

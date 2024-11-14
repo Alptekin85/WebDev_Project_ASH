@@ -135,10 +135,12 @@ h1{
 
 
 #aboutPage p{
-  background-color: lightgrey;
-  margin: 30px 30px;
+  color: rgb(0, 51, 102);
+  background-color: rgb(102, 178, 255);
+  margin: 10px;
   padding: 20px;
   border-radius: 10px;
+  transition: border-radius 0.2s, font-size 0.2s;
 }
 
 
@@ -149,6 +151,12 @@ h1{
   padding: 40px;
   border-radius: 10px;
   font-size: 1.3rem;
+}
+
+
+#aboutPage h2{
+  background-color: rgb(102, 178, 255);
+  color: rgb(0, 51, 102);
 }
 
 
@@ -176,11 +184,8 @@ h1{
   border-width: 5px;
   border-style: solid;
   border-radius: 3px;
-  
-
- 
-  
 }
+
 
 
 #phoneNumber{
@@ -200,6 +205,8 @@ input{
   margin-bottom: 25px;
   border-radius: 10px;
 }
+
+
 
 textarea{
   background-color: white;
@@ -232,11 +239,12 @@ button{
   transition: opacity 0.5s
 }
 
+
+
 button:hover{
   opacity: 80%;
   cursor: pointer;
 }
-
 
 
 #messageMe{
@@ -245,8 +253,6 @@ button:hover{
   margin: 10px;
   border-radius: 10px;
 }
-
-
 
 
 

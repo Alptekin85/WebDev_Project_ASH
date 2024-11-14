@@ -59,10 +59,11 @@ video{
 
 
 
-h1{
+.logo h1{
   color: skyblue;
   text-align: center;
   font-family: "Orbitron", sans-serif;
+  font-size: x-large;
 }
 
 
@@ -70,8 +71,8 @@ h1{
   margin-left: auto; 
   margin-right: auto;
   display: block;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: rgb(110, 110, 110); 
   border-radius: 10px;
   font-size: 0.7rem;
@@ -134,11 +135,31 @@ h1{
 
 
 
+#aboutPage img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 10px;
+}
+
+
+#aboutPage img:hover{
+  padding: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 60%;
+}
+
+
 #aboutPage p{
   color: rgb(0, 51, 102);
   background-color: rgb(102, 178, 255);
-  margin: 10px;
-  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2%;
   border-radius: 10px;
   transition: border-radius 0.2s, font-size 0.2s;
 }
@@ -156,6 +177,7 @@ h1{
 
 #aboutPage h2{
   color: rgb(0, 51, 102);
+  margin-left: 10%;
 }
 
 
@@ -167,9 +189,12 @@ h1{
 
 
 #contactForm{
-  background-color: rgb(110, 110, 110);
-  padding: 20px;
-  margin: 10px;
+  color: rgb(0, 51, 102);
+  background-color: rgb(102, 178, 255);
+  padding: 1%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   border-radius: 10px; 
 }
 
@@ -189,7 +214,7 @@ h1{
 
 #phoneNumber{
   color: rgb(0, 51, 102);
-  background-color: rgb(102, 178, 255;
+  background-color: rgb(102, 178, 255);
   padding: 3px; 
 }
 
@@ -248,10 +273,14 @@ button:hover{
 
 
 #messageMe{
-  background-color: rgb(110, 110, 110);
-  padding: 20px;
-  margin: 10px;
+  color: rgb(0, 51, 102);
+  background-color: rgb(102, 178, 255);
+  padding: 1%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   border-radius: 10px;
+  text-align: center;
 }
 
 

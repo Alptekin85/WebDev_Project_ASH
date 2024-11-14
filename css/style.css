@@ -155,7 +155,6 @@ h1{
 
 
 #aboutPage h2{
-  background-color: rgb(102, 178, 255);
   color: rgb(0, 51, 102);
 }
 
@@ -189,7 +188,8 @@ h1{
 
 
 #phoneNumber{
-  background-color: lightgrey;
+  color: rgb(0, 51, 102);
+  background-color: rgb(102, 178, 255;
   padding: 3px; 
 }
 

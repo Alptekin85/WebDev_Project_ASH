@@ -21,7 +21,7 @@ video{
 .topnav a{
   float: left;
   display: block;
-  color: red;
+  color: rgb(125, 157, 232);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -95,6 +95,7 @@ video{
   padding: 20px;
   border-radius: 10px;
   transition: border-radius 0.2s, font-size 0.2s;
+  display: none;
   
 }
 
@@ -441,3 +442,15 @@ button:hover{
 } 
 
 /* new changed */
+
+#errormess {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+}
+

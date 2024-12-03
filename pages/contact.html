@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 
 <html lang="en">
     <head>
@@ -38,20 +38,49 @@
         </div>
 
 
-        <div id="errormess"></div>
+        
         
 
+    <div class="contact-container">
+        <form name="myForm" onsubmit="return validateForm()"  class="grid">
+        
+        <div>
+          <label for="First name">First name</label>
+          <input type="text" id="First name" name="fname" placeholder="Enter First name"  aria-required="true" aria-describedby="nameError">
+          <div id="fname-error" role="alert" aria-live="polite"></div>
+        </div>
+        
+        
+        <div>
+          <label for="Last name" >Last name</label>
+          <input type="text" id="Last name" name="lname" placeholder="Enter Last name" aria-required="true" aria-describedby="nameError">
+          <div id="lname-error" role="alert" aria-live="polite"></div>
+          
+        </div>
+        
+        <div>
+          <label for="email" >email</label>
+          <input type="text" id="email" name="email" placeholder="Enter EMAIL"  aria-required="true" aria-describedby="emailError">
+          <div id="email-error" role="alert" aria-live="polite"></div>
+        </div> 
 
-        <form name="myForm" onsubmit="return validateForm()" method="post">
-          <input type="text" id="First name" name="fname" placeholder="Enter First name" required>
-          <input type="text" id="Last name" name="lname" placeholder="Enter Last name" required>
-          <input type="text" id="email" name="email" placeholder="Enter EMAIL" required>
-          <input type="text" id="Number" name="number" placeholder="Enter Number" required>
-          <textarea rows="5" cols="60" name="message" placeholder="Enter Your question" required></textarea>
-          <button type="submit">submit</button>
+        <div>
+          <label for="Number">number</label>
+          <input type="text" id="Number" name="number" placeholder="Enter Number"aria-required="true" aria-describedby="number">
+        </div>  
+
+        <div>
+          <label for="message">Your Question:</label>
+          <textarea id="message" rows="5" cols="60" name="message" placeholder="Enter Your question" aria-required="true"></textarea>
+        </div>
+
+        <div>
+          <button class="contact-button" type="submit">submit</button>
+        </div>
       </form>
+    </div>
 
-        <br>
+        
 
        <div id="contactForm">
             <p>If you have any questions, places you want me to go to next, or ay sort of suggestions; please don't be afraid to contact me through email.</p>
@@ -80,56 +109,68 @@
   <script>
 
 
-    function errormess(message, duration = 3000) {
-        const errormess = document.getElementById("errormess");
-        errormess.innerText = message;
-        errormess.style.display = "block";
+
+function errormess(message, elementId, duration = 3000) {
+    const errorDiv = document.getElementById(elementId);  // Use the passed elementId parameter
+    errorDiv.innerText = message;
+    errorDiv.style.display = "block";
+  
     
-        setTimeout(() => {
-          errormess.style.display = "none";
-        }, duration);
-      }
-    
-    
-    
-    
-    
-    function validateForm() {
-      let nameCheck = document.forms["myForm"]["fname"].value;
-      let mailCheck = document.forms["myForm"]["email"].value;
-      if (nameCheck == "") {
-        errormess("Name must be filled out");
+    setTimeout(() => {
+        errorDiv.style.display = "none";
+    }, duration);
+}
+
+
+function validateForm() {
+   
+    let nameCheck = document.forms["myForm"]["fname"].value;
+    let mailCheck = document.forms["myForm"]["email"].value;
+    let lnameCheck = document.forms["myForm"]["lname"].value;
+
+    if (nameCheck == "") {
+        errormess("First name must be filled out", "fname-error");
+        return false;  
+    }
+
+   
+    if (lnameCheck == "") {
+        errormess("Last name must be filled out", "lname-error");
         return false;
-      }
-      
-      
-      let validDot = 0;
-      let validMail = 0;
-      for (let i = 0; i < mailCheck.length; i++) {
+    }
+
+   
+    if (mailCheck == "") {
+        errormess("Email must be filled out", "email-error");
+        return false;
+    }
+
+    
+    let validDot = 0;
+    let validMail = 0;
+
+    for (let i = 0; i < mailCheck.length; i++) {
         if (mailCheck[i] == "@") {
             validMail = validMail + 1;
-        }
-        
-        else if (mailCheck[i] == ".") {
+        } else if (mailCheck[i] == ".") {
             validDot = validDot + 1;
         }
-        
-      }
-      
-      if (validMail != 1 || validDot != 1) {
-        errormess("Email must be filled out");
-        return false;
-      }
-        
-    
-    
     }
+
+
+    if (validMail != 1 || validDot != 1) {
+        errormess("Invalid email, are you forgetting an '@' or '.com'?", "email-error");
+        return false;
+    }
+
+    return true;  
+}
+
     
     </script>
         
         
     </body>
 </html>
-
 
 <!-- new changed -->

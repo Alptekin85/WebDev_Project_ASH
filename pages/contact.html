@@ -67,6 +67,7 @@
         <div>
           <label for="Number">number</label>
           <input type="text" id="Number" name="number" placeholder="Enter Number"aria-required="true" aria-describedby="number">
+          <div id="pnum-error" role="alert" aria-live="polite"></div> 
         </div>  
 
         <div>
@@ -127,6 +128,7 @@ function validateForm() {
     let nameCheck = document.forms["myForm"]["fname"].value;
     let mailCheck = document.forms["myForm"]["email"].value;
     let lnameCheck = document.forms["myForm"]["lname"].value;
+    let phoneCheck = document.forms["myForm"]["pnum"].value;
 
     if (nameCheck == "") {
         errormess("First name must be filled out", "fname-error");
@@ -161,6 +163,61 @@ function validateForm() {
     if (validMail != 1 || validDot != 1) {
         errormess("Invalid email, are you forgetting an '@' or '.com'?", "email-error");
         return false;
+    }
+
+    let validPnum = 1;
+    
+    if (phoneCheck[0] != "0") {
+        errormess("Invalid phone number, does your number start with '0'?", "pnum-error");
+        return false;
+    }
+
+    if (phoneCheck.length != 10) {
+        errormess("Invalid phone number, Is your phone number 10 digits long?", "pnum-error");
+        return false;
+    }
+    
+    for (let i = 1; i < phoneCheck.length; i++) {
+        switch (phoneCheck[i]) {
+            case "1":
+                break;
+                
+            case "2":
+                break;
+                
+            case "3":
+                break;
+                
+            case "4":
+                break;
+                
+            case "5":
+                break;
+                
+            case "6":
+                break;
+                
+            case "7":
+                break;
+                
+            case "8":
+                break;
+                
+            case "9":
+                break;
+                
+            case "0":
+                break;
+
+            default:
+                validPnum = 0;
+                break;
+        }
+
+        if (validPnum == 0) {
+            errormess("Invalid phone number, make sure you only entered numbers.", "pnum-error");
+            return false;
+        }
     }
 
     return true;  

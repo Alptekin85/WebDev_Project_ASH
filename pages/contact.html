@@ -221,11 +221,11 @@ function validateForm() {
                 validPnum = 0;
                 break;
         }
+    }
 
-        if (validPnum == 0) {
-            errormess("Invalid phone number, make sure you only entered numbers.", "pnum-error");
-            return false;
-        }
+    if (validPnum == 0) {
+        errormess("Invalid phone number, make sure you only entered numbers.", "pnum-error");
+        return false;
     }
 
     return true;  

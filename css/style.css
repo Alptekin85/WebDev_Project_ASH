@@ -420,7 +420,7 @@ button:hover{
 
 /* new changed */
 
-#fname-error, #lname-error, #email-error {
+#fname-error, #lname-error, #email-error, #pnum-error {
   
   display: none;
   padding: 10px;

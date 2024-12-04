@@ -147,6 +147,7 @@ function validateForm() {
         return false;
     }
 
+
     
     let validDot = 0;
     let validMail = 0;
@@ -162,6 +163,13 @@ function validateForm() {
 
     if (validMail != 1 || validDot != 1) {
         errormess("Invalid email, are you forgetting an '@' or '.com'?", "email-error");
+        return false;
+    }
+
+
+
+    if (phoneCheck == "") {
+        errormess("Phone number must be filled out", "pnum-error");
         return false;
     }
 
